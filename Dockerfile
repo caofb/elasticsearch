@@ -26,9 +26,9 @@ ADD /config/ik /elasticsearch/config/ik
 # Install Admin UI
 RUN ["/elasticsearch/bin/plugin", "--install", "mobz/elasticsearch-head"]
 # Install JDBC River
-RUN ["/elasticsearch/bin/plugin", "--install", "jdbc","--url" ,"http://webqq.qiniudn.com/elasticsearch-river-jdbc-1.5.0.5-plugin-all.zip"]
+RUN ["/elasticsearch/bin/plugin", "--install", "jdbc","--url" ,"https://github.com/caofb/elasticsearch/blob/master/plugins/elasticsearch-river-jdbc-1.5.0.5-plugin-all.zip?raw=true"]
 # Install Ik
-RUN ["/elasticsearch/bin/plugin", "--install", "analysis-ik ","--url" ,"http://webqq.qiniudn.com/elasticsearch-analysis-ik-1.3.0.zip"]
+RUN ["/elasticsearch/bin/plugin", "--install", "analysis-ik ","--url" ,"https://github.com/caofb/elasticsearch/blob/master/plugins/elasticsearch-analysis-ik-1.3.0.zip?raw=true"]
 
 
 # Define default command.
